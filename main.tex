@@ -1,0 +1,38 @@
+\documentclass[11 pt,letterpaper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[boldsans]{concmath}
+\usepackage{eulervm}
+
+\usepackage[margin=1.25in]{geometry}
+\usepackage{setspace} % for \onehalfspacing
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[authoryear,sort&compress]{natbib}
+
+%hyperref should be the last package loaded
+\usepackage[final]{hyperref}
+
+% ... except for cleveref?
+\usepackage[noabbrev,capitalize]{cleveref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{headings}
+
+\title{My Generals Report}
+\author{Me}
+\date{\today}
+\begin{document}
+\maketitle
+
+\onehalfspacing
+%\doublespacing
+
+Content goes here~\cite{famous-paper}.
+
+\singlespacing
+\bibliography{main}{}
+\bibliographystyle{alpha}
+
+\end{document}
